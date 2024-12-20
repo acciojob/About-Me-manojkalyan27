@@ -1,1 +1,102 @@
 
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 8px;
+    color: grey;
+}
+.profile-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profilepic>img{
+    width: 150px;
+    height: 150px;
+}
+
+.role-details>p>span , .skills>span, .aboutme>h3{
+    font-weight: bold;
+    color: black;
+}
+
+.aboutme>h3::after{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color: #0C78FF;
+    top: 20px;
+    left: 0px;
+    margin-top: 5px;
+}
+
+.aboutme>p{
+    padding-top: 30px;
+}
+
+.role-details{
+    padding-left: 30px;
+    /* color: #FBFBFB; */
+
+}
+.skills>ul{
+    padding: 10px 0px;
+}
+.skills>ul>li{
+    padding-top: 12px;
+}
+.aboutme , ul, .test , .test1, .test2 {
+    position: relative; /* Add this */
+}
+
+/* .test::after{
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 5px;
+    background-color: #0C78FF;
+    top: 35px;
+    left: 0px;
+} */
+.test::after,
+.test1::after,
+.test2::after,
+.test3::after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    background-color: #0C78FF;
+    top: 35px; 
+    left: 0px;
+}
+
+.test::after {
+    width: 350px;
+}
+
+.test1::after {
+    width: 300px;
+}
+
+.test2::after {
+    width: 320px;
+}
+
+.test3::after {
+    width: 310px;
+    top: 130px; 
+}
